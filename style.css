@@ -1,12 +1,31 @@
-body {
-    background-color:white;
-       }
-       .myButton {
-       background-color:whitesmoke;
-       color:black;
-       height: 50px;
-       min-width: 100px;
-       border: 2px;
-       cursor: pointer;
-       }
-    
+    body {
+        background-color:white;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      
+      #joke-container {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      #joke-display {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      
+      #joke-date {
+        font-size: 1.25rem;
+        color: #555;
+        margin: 1rem 0;
+      }
+      
+      #joke-text,
+      #joke-loading {
+        margin-top: 2rem;
+        font-size: 1.75rem;
+      }
+      
+      .hidden {
+        display: none;
+      }

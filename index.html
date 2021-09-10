@@ -10,21 +10,52 @@
       <h1 class="visually-hidden">WHADDUP MAH Glip GLOPPZZZzzzzz</h1>
       <div class="px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4" src="ralph-63.jpg" alt="image of flowers" style="height: 500px">
-        <h1 class="display-5 fw-bold">Welcome to your one stop shop of bad dinosaur jokes... </h1>
+        <h1 class="display-5 fw-bold">Welcome to your one stop shop of bad dad jokes... </h1>
         <div class="col-lg-6 mx-auto">
             <meta charset="UTF-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    </head>
-    <body>
-    <button class="myButton" onClick="myFunction()">Click Me</button>
-    </body>
 
-        <h2>  <p class="lead mb-4"> Why can't you hear a pterodactyl go to the bathroom? </p> </h2>
-    <p> because the P is silent...... </p>
+    <div id="joke-container">
+      <form id="joke-form" class="form-inline">
+        <div class="form-group">
+          <input type="text"
+                 id="joke-number"
+                 class="form-control mr-3"
+                 placeholder="Can has joke pls?"
+                 required>
+        </div>
+   
+      </form>
+    
+      <div id="joke-display">
+        <div id="joke-controls">
+          <button id="joke-control-prev"
+                  class="btn btn-secondary"
+                  >
+            &laquo; Prev
+          </button>
+          <button id="joke-control-random"
+                  class="btn btn-secondary"
+                  >
+            Click Here
+          </button>
+          <button id="joke-control-next"
+                  class="btn btn-secondary"
+                  >
+            Next &raquo;
+          </button>
+        </div><!-- /joke-controls -->
+    
+        <div id="joke-text" class="hidden">
+        </div>
+        <p>
+        <div id="joke-loading">
+          <i class="fa fa-spin fa-spinner"></i>
+          &nbsp; Loading.... Always loading....
+        </p>
+        </div>
+      </div><!-- /joke-display -->
+    </div><!-- /joke-container -->
     </style>
   </body>
 </html>
